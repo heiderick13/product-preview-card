@@ -18,6 +18,11 @@ body {
     color: rgb(151, 150, 148);
 }
 
+.margin {
+    height: 70px;
+    display: none;
+}
+
 p {
     font-size: 14px;
 }
@@ -56,7 +61,8 @@ h2,
 
 
 .card {
-    max-width: 350px;
+    max-width: 375px;
+    min-width: 350px;
     border-radius: 10px;
     margin: auto;
     overflow: hidden;
@@ -93,4 +99,30 @@ h2,
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 450px) {
+
+    .margin {
+        display: block;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
+        height: 450px;
+        line-height: 1.7;
+    }
+
+    .img {
+        background-image: url(../images/image-product-desktop.jpg);
+        height: 100%;
+        width: 50%;
+    }
+
+    .conteudo {
+        width: 50%;
+
+    }
 }
