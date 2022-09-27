@@ -1,5 +1,89 @@
+:root {
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #F3EAE3;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: rgb(151, 150, 148);
+}
+
 p {
     font-size: 14px;
+}
+
+h2 {
+    line-height: 1;
+    color: var(--very-dark-blue);
+}
+
+.perfume {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+.valores {
+    display: flex;
+    align-items: center;
+}
+
+h2,
+.promo {
+    font-family: Fraunces;
+    font-weight: 700;
+}
+
+.promo {
+    font-size: 2rem;
+    color: var(--dark-cyan);
+}
+
+.promo+p {
+    text-decoration: line-through;
+}
+
+
+.card {
+    max-width: 350px;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+.img {
+    background-image: url(../images/image-product-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+.bttn {
+    background-color: var(--dark-cyan);
+    padding: 1rem;
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--white);
+    border-radius: 8px;
+    align-self: center;
+    width: 100%;
+    border: none;
+}
+
+.bttn:active {
+    background-color: hsl(157, 55%, 15%);
 }
 
 .attribution {
@@ -9,9 +93,4 @@ p {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-.card {
-    background-image: url(../images/image-product-mobile.jpg);
-    background-position: top;
 }
