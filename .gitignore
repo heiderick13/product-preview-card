@@ -3,5 +3,5 @@
 *.xd
 .DS_Store
 .prettierignore
-readme-md
+README-.md
 style-guide.md
