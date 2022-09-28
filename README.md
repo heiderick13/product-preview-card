@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Frontend%20Mentor%20Product%20preview%20card%20component.png.jpg)
+![](./images/screenshot.png)
 
 ### Links
 
