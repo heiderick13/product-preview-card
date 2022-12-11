@@ -1,115 +1,114 @@
 :root {
-    --very-dark-blue: hsl(212, 21%, 14%);
-    --dark-grayish-blue: hsl(228, 12%, 48%);
-    --white: hsl(0, 0%, 100%);
-    --dark-cyan: hsl(158, 36%, 37%);
-    --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
-    background-color: #F3EAE3;
-    font-family: Montserrat;
-    font-weight: 700;
-    color: rgb(151, 150, 148);
+  display: grid;
+  height: 100vh;
+  background-color: #f3eae3;
+  font-family: Montserrat;
+  font-weight: 700;
+  color: rgb(151, 150, 148);
 }
 
-.margin {
-    height: 70px;
-    display: none;
+section {
+  place-self: end center;
 }
 
 p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 h2 {
-    line-height: 1;
-    color: var(--very-dark-blue);
+  line-height: 1;
+  color: var(--very-dark-blue);
 }
 
 .perfume {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 10pt;
-    font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 10pt;
+  font-weight: 500;
 }
 
 .valores {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 h2,
 .promo {
-    font-family: Fraunces;
-    font-weight: 700;
+  font-family: Fraunces;
+  font-weight: 700;
 }
 
 .promo {
-    font-size: 2rem;
-    color: var(--dark-cyan);
+  font-size: 2rem;
+  color: var(--dark-cyan);
 }
 
-.promo+p {
-    text-decoration: line-through;
+.promo + p {
+  text-decoration: line-through;
 }
-
 
 .card {
-    max-width: 350px;
-    min-width: 320px;
-    border-radius: 10px;
-    margin: auto;
-    overflow: hidden;
-    line-height: 1.4;
+  max-width: 350px;
+  min-width: 320px;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+  line-height: 1.4;
 }
 
 .bttn {
-    background-color: var(--dark-cyan);
-    padding: 1rem;
-    font-size: 10pt;
-    font-weight: 700;
-    color: var(--white);
-    border-radius: 8px;
-    align-self: center;
-    width: 100%;
-    border: none;
+  background-color: var(--dark-cyan);
+  padding: 1rem;
+  font-size: 10pt;
+  font-weight: 700;
+  color: var(--white);
+  border-radius: 8px;
+  align-self: center;
+  width: 100%;
+  border: none;
 }
 
 .bttn:active {
-    background-color: hsl(157, 55%, 15%);
+  background-color: hsl(157, 55%, 15%);
+}
+
+footer {
+  display: grid;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  place-self: end center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 450px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    height: 450px;
+    line-height: 1.7;
+  }
 
-    .margin {
-        display: block;
-    }
-
-    .card {
-        display: flex;
-        flex-direction: row;
-        max-width: 600px;
-        height: 450px;
-        line-height: 1.7;
-    }
-
-    .conteudo {
-        width: 50%;
-
-    }
+  .conteudo {
+    width: 50%;
+  }
 }
